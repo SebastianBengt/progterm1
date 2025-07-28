@@ -1,8 +1,8 @@
 [
-{"pumice"},
-{"granite"},
-{"sandstone"},
-{"coal"},
-{"marble"},
-{"slate"}
+{"name" : "pumice", "type" : "Igneous"},
+{"name" : "granite", "type" : "Igneous"},
+{"name" : "sandstone", "type" : "Sedimentary"},
+{"name" : "coal", "type" : "Sedimentary"},
+{"name" : "marble", "type" : "Metamorphic"},
+{"name" : "slate", "type" : "Metamorphic"}
 ]

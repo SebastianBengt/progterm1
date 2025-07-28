@@ -9,26 +9,29 @@ app.get('/', function(req, resp){
 app.get('/rock/random', function(req, resp){
     let rock_number = Math.floor(Math.random()*rocks.length) 
     let rock = rocks[rock_number]
-    resp.send(rock)
+    resp.send(rock.name)
   })
   
 app.get('/rock/search', function(req, resp) {
     let search_term = req.query.search_term
     let search_results = []
     for (let rock of rocks){
-        if(rock.includes(search_term)){
+        if(rock.name.includes(search_term)){
             search_results.push(rock)
         }
     }
     resp.send(search_results)
 })
 
-app.get('/random/:max', function(req, resp){
-    let max = parseInt(req.params.max)
-    let rand = Math.floor(Math.random()*max) +1
-    console.log('Max via url is ' + max + ' rand is ' + rand)
-    resp.send('' + rand)
-  })
+app.get('/rock/details/:rock_type', function(req, resp){
+    let type = req.params.rock_type
+    for (let rock of rocks){
+        if(rock.name == type){
+            resp.send(rock)
+            return
+        }
+  }
+})
   
 /* app.get('/r', function(req, resp){
     max = parseInt(req.query.max)
