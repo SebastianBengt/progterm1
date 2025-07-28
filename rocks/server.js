@@ -19,6 +19,16 @@ app.get('/rock/random', function(req, resp){
     resp.send(rock)
   })
   
+app.get('/rock/search', function(req, resp) {
+    let search_term = req.query.search_term
+    let search_results = []
+    for (let rock of rocks){
+        if(rock.includes(search_term)){
+            search_results.push(rock)
+        }
+    }
+    resp.send(search_results)
+})
 
 app.get('/random/:max', function(req, resp){
     let max = parseInt(req.params.max)
