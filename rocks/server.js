@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
 
+app.use(express.static('client'))
+
 let rocks = require("./rocks.json")
+const e = require('express')
+
 app.get('/', function(req, resp){
   resp.send('Hello world')
 })
@@ -32,7 +36,8 @@ app.get('/rock/details/:rock_type', function(req, resp){
         }
   }
 })
-  
+app.use(express.static('client'))
+
 /* app.get('/r', function(req, resp){
     max = parseInt(req.query.max)
     rand = Math.floor(Math.random()*max) +1
