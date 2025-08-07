@@ -20,3 +20,23 @@ add_form.addEventListener('submit', async function(event) {
     }
 });
 
+async function loadRocks() {
+    try {
+      const response = await fetch('/api/rocks');
+      const rocks = await response.json();
+      
+      // Clear existing list, e.g.:
+      const rockList = document.getElementById('rock-list');
+      rockList.innerHTML = '';
+  
+      // Populate list with new rocks
+      rocks.forEach(rock => {
+        const li = document.createElement('li');
+        li.textContent = rock.name;
+        rockList.appendChild(li);
+      });
+    } catch (err) {
+      console.error('Failed to load rocks:', err);
+    }
+  }
+  

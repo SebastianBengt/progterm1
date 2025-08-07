@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "pumice",
     "type": "Igneous",
     "color": "Light gray",
@@ -11,6 +12,7 @@
     "image": "images/pumice.jpg"
   },
   {
+    "id": "2",
     "name": "granite",
     "type": "Igneous",
     "color": "Pink to gray",
@@ -23,6 +25,7 @@
     "image": "images/granite.jpg"
   },
   {
+    "id": "3",
     "name": "basalt",
     "type": "Igneous",
     "color": "Dark gray to black",
@@ -35,6 +38,7 @@
     "image": "images/basalt.jpg"
   },
   {
+    "id": "4",
     "name": "obsidian",
     "type": "Igneous",
     "color": "Black",
@@ -45,6 +49,7 @@
     "image": "images/obsidian.jpg"
   },
   {
+    "id": "5",
     "name": "andesite",
     "type": "Igneous",
     "color": "Gray",
@@ -56,6 +61,7 @@
     "image": "images/andesite.jpg"
   },
   {
+    "id": "6",
     "name": "rhyolite",
     "type": "Igneous",
     "color": "Light pink to gray",
@@ -68,6 +74,7 @@
     "image": "images/rhyolite.jpg"
   },
   {
+    "id": "7",
     "name": "diorite",
     "type": "Igneous",
     "color": "Salt and pepper",
@@ -79,6 +86,7 @@
     "image": "images/diorite.jpg"
   },
   {
+    "id": "8",
     "name": "gabbro",
     "type": "Igneous",
     "color": "Dark gray",
@@ -91,6 +99,7 @@
     "image": "images/gabbro.jpg"
   },
   {
+    "id": "9",
     "name": "sandstone",
     "type": "Sedimentary",
     "color": "Tan",
@@ -102,6 +111,7 @@
     "image": "images/sandstone.jpg"
   },
   {
+    "id": "10",
     "name": "limestone",
     "type": "Sedimentary",
     "color": "White to gray",
@@ -112,6 +122,7 @@
     "image": "images/limestone.jpg"
   },
   {
+    "id": "11",
     "name": "shale",
     "type": "Sedimentary",
     "color": "Gray",
@@ -123,6 +134,7 @@
     "image": "images/shale.jpg"
   },
   {
+    "id": "12",
     "name": "coal",
     "type": "Sedimentary",
     "color": "Black",
@@ -133,6 +145,7 @@
     "image": "images/coal.jpg"
   },
   {
+    "id": "13",
     "name": "conglomerate",
     "type": "Sedimentary",
     "color": "Varied",
@@ -144,6 +157,7 @@
     "image": "images/conglomerate.jpg"
   },
   {
+    "id": "14",
     "name": "breccia",
     "type": "Sedimentary",
     "color": "Varied",
@@ -156,6 +170,7 @@
     "image": "images/breccia.jpg"
   },
   {
+    "id": "15",
     "name": "chalk",
     "type": "Sedimentary",
     "color": "White",
@@ -166,6 +181,7 @@
     "image": "images/chalk.jpg"
   },
   {
+    "id": "16",
     "name": "chert",
     "type": "Sedimentary",
     "color": "White to red to black",
@@ -176,6 +192,7 @@
     "image": "images/chert.jpg"
   },
   {
+    "id": "17",
     "name": "marble",
     "type": "Metamorphic",
     "color": "White",
@@ -186,6 +203,7 @@
     "image": "images/marble.jpg"
   },
   {
+    "id": "18",
     "name": "slate",
     "type": "Metamorphic",
     "color": "Gray to black",
@@ -197,6 +215,7 @@
     "image": "images/slate.jpg"
   },
   {
+    "id": "19",
     "name": "gneiss",
     "type": "Metamorphic",
     "color": "Banded black and white",
@@ -209,6 +228,7 @@
     "image": "images/gneiss.jpg"
   },
   {
+    "id": "20",
     "name": "schist",
     "type": "Metamorphic",
     "color": "Silvery",
@@ -221,6 +241,7 @@
     "image": "images/schist.jpg"
   },
   {
+    "id": "21",
     "name": "phyllite",
     "type": "Metamorphic",
     "color": "Shiny gray",
@@ -232,6 +253,7 @@
     "image": "images/phyllite.jpg"
   },
   {
+    "id": "22",
     "name": "quartzite",
     "type": "Metamorphic",
     "color": "White to gray",
@@ -242,6 +264,7 @@
     "image": "images/quartzite.jpg"
   },
   {
+    "id": "23",
     "name": "amphibolite",
     "type": "Metamorphic",
     "color": "Dark green to black",
@@ -253,6 +276,7 @@
     "image": "images/amphibolite.jpg"
   },
   {
+    "id": "24",
     "name": "hornfels",
     "type": "Metamorphic",
     "color": "Dark brown to black",
@@ -264,11 +288,50 @@
     "image": "images/hornfels.jpg"
   },
   {
+    "id": "25",
     "name": "cummingtonite",
     "type": "Igneous",
     "color": "Dark to pale-green",
     "grain_size": "Fine",
     "minerals": "hornblende,  actinolite,  talc,  quartz,  biotite,  chlorite",
     "image": "images/cummingtonite.jpg"
+  },
+  {
+    "id": "0a797e39-fae8-4274-8289-e11d7f8c37b0",
+    "name": "Test Rock",
+    "type": "Igneous",
+    "color": "Gray",
+    "grain_size": "Medium",
+    "minerals": [
+      "Quartz",
+      "Feldspar"
+    ],
+    "image": null
+  },
+  {
+    "id": "531acf2a-88c8-4730-8ace-b85753780031",
+    "name": "Image Rock",
+    "type": "Sedimentary",
+    "minerals": [],
+    "image": "/images/1754570511765-sample.jpg"
+  },
+  {
+    "id": "b6e8eda4-1a28-4eef-b33d-42610a4c546a",
+    "name": "Test Rock",
+    "type": "Igneous",
+    "color": "Gray",
+    "grain_size": "Medium",
+    "minerals": [
+      "Quartz",
+      "Feldspar"
+    ],
+    "image": null
+  },
+  {
+    "id": "a1f6e5b3-de40-48bc-b3e2-1bd66b5db2b1",
+    "name": "Image Rock",
+    "type": "Sedimentary",
+    "minerals": [],
+    "image": "/images/1754570603369-sample.jpg"
   }
 ]

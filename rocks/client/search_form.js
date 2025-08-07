@@ -63,3 +63,4 @@ async function handleSearch(event) {
     console.error("Search failed:", err);
   }
 }
+
