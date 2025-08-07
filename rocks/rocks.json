@@ -295,43 +295,5 @@
     "grain_size": "Fine",
     "minerals": "hornblende,  actinolite,  talc,  quartz,  biotite,  chlorite",
     "image": "images/cummingtonite.jpg"
-  },
-  {
-    "id": "0a797e39-fae8-4274-8289-e11d7f8c37b0",
-    "name": "Test Rock",
-    "type": "Igneous",
-    "color": "Gray",
-    "grain_size": "Medium",
-    "minerals": [
-      "Quartz",
-      "Feldspar"
-    ],
-    "image": null
-  },
-  {
-    "id": "531acf2a-88c8-4730-8ace-b85753780031",
-    "name": "Image Rock",
-    "type": "Sedimentary",
-    "minerals": [],
-    "image": "/images/1754570511765-sample.jpg"
-  },
-  {
-    "id": "b6e8eda4-1a28-4eef-b33d-42610a4c546a",
-    "name": "Test Rock",
-    "type": "Igneous",
-    "color": "Gray",
-    "grain_size": "Medium",
-    "minerals": [
-      "Quartz",
-      "Feldspar"
-    ],
-    "image": null
-  },
-  {
-    "id": "a1f6e5b3-de40-48bc-b3e2-1bd66b5db2b1",
-    "name": "Image Rock",
-    "type": "Sedimentary",
-    "minerals": [],
-    "image": "/images/1754570603369-sample.jpg"
   }
 ]
