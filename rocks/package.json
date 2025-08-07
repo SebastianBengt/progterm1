@@ -9,6 +9,7 @@
   "author": "w.s.b.widerberg@durham.ac.uk",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
   }
 }

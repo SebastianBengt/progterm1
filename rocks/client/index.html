@@ -9,7 +9,7 @@
     <title>Jumbotron example · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
-    <script src="../assets/js/color-modes.js"></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="theme-color" content="#712cf9">
 
@@ -94,6 +94,77 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .rock-details {
+      display: none;
+      background-color: #f9f9f9;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .card:hover .rock-details {
+      display: block;
+    }
+    /* Change background of the entire body to gray and text to white */
+body {
+  background-color: #333333; /* dark gray */
+  color: white;
+}
+
+/* Override card background from white to a darker gray */
+.card {
+  background-color: #555555 !important;
+  color: white !important;
+}
+
+/* Ensure form inputs and labels also adapt */
+form label, form input, form select, form button {
+  color: white;
+}
+
+form input, form select {
+  background-color: #666666;
+  border: 1px solid #888888;
+}
+
+form input::placeholder {
+  color: #cccccc;
+}
+
+/* Buttons with Bootstrap classes: make sure text is white */
+.btn, .btn-primary, .btn-success {
+  color: white !important;
+}
+
+/* Search results list background & text */
+#search_results {
+  background-color: #555555;
+  color: white;
+}
+
+/* The add rock message */
+#add_message {
+  color: white;
+}
+
+/* The rock details box */
+.rock-details {
+  background-color: #444444 !important;
+  color: white !important;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Links if any */
+a {
+  color: #ddd;
+}
+
+a:hover {
+  color: #fff;
+}
+
     </style>
   </head>
 
@@ -105,12 +176,74 @@
           <p class="lead">Browse through types of rocks and their geological features.</p>
         </header>
   
-        <div class="mb-4">
-          <button id="search_button" class="btn btn-primary btn-lg">Search Rocks</button>
+        <form id="search_form" class="mb-3">
+            <label for="search_term" class="form-label">Search Rocks:</label>
+            <input type="text" class="form-control" id="search_term" name="search_term" placeholder="Enter rock name or type...">
+          </form>
+          
+          <ul id="search_results" class="list-group mb-5">
+            
+          </ul>
+          <button id="toggleAddFormBtn" class="btn btn-primary mb-3">Add New Rock</button>
+
+        <div id="addRockFormContainer" style="display: none;">
+        <form id="add_rock_form" enctype="multipart/form-data">
+            <h3>Add New Rock</h3>
+        
+            <div class="mb-3">
+            <label for="rock_name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="rock_name" name="name" required>
+            </div>
+        
+            <div class="mb-3">
+            <label for="rock_type" class="form-label">Type:</label>
+            <select class="form-control" id="rock_type" name="type" required>
+                <option value="Igneous">Igneous</option>
+                <option value="Sedimentary">Sedimentary</option>
+                <option value="Metamorphic">Metamorphic</option>
+            </select>
+            </div>
+        
+            <div class="mb-3">
+            <label for="rock_color" class="form-label">Color:</label>
+            <input type="text" class="form-control" id="rock_color" name="color" required>
+            </div>
+        
+            <div class="mb-3">
+            <label for="rock_grain_size" class="form-label">Grain Size:</label>
+            <input type="text" class="form-control" id="rock_grain_size" name="grain_size" required>
+            </div>
+        
+            <div class="mb-3">
+            <label for="rock_minerals" class="form-label">Minerals (comma-separated):</label>
+            <input type="text" class="form-control" id="rock_minerals" name="minerals" required>
+            </div>
+        
+            <div class="mb-3">
+            <label for="rock_image" class="form-label">Image:</label>
+            <input type="file" class="form-control" id="rock_image" name="image" accept="image/*" required>
+            </div>
+        
+            <button type="submit" class="btn btn-success">Add Rock</button>
+        </form>
+        
+        <div id="add_message" class="mt-3"></div>
         </div>
-  
+
+        <script>
+        // Toggle form visibility on button click
+        document.getElementById('toggleAddFormBtn').addEventListener('click', () => {
+            const formContainer = document.getElementById('addRockFormContainer');
+            if (formContainer.style.display === 'none') {
+            formContainer.style.display = 'block';
+            } else {
+            formContainer.style.display = 'none';
+            }
+        });
+        </script>
+
         <div id="rock_list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <!-- Cards will be injected here via search_form.js -->
+        
         </div>
   
         <footer class="pt-5 mt-5 border-top text-center text-muted">
@@ -118,8 +251,10 @@
         </footer>
       </div>
     </main>
-  
+    <script src="add_form.js"></script>
     <script src="search_form.js"></script>
+    <script src="display.js"></script>
+
   </body>
   
 </html>
