@@ -1,8 +1,171 @@
 [
-{"name" : "pumice", "type" : "Igneous"},
-{"name" : "granite", "type" : "Igneous"},
-{"name" : "sandstone", "type" : "Sedimentary"},
-{"name" : "coal", "type" : "Sedimentary"},
-{"name" : "marble", "type" : "Metamorphic"},
-{"name" : "slate", "type" : "Metamorphic"}
-]
+    {
+      "name": "pumice",
+      "type": "Igneous",
+      "color": "Light gray",
+      "grain_size": "Fine",
+      "minerals": ["feldspar", "quartz"]
+    },
+    {
+      "name": "granite",
+      "type": "Igneous",
+      "color": "Pink to gray",
+      "grain_size": "Coarse",
+      "minerals": ["quartz", "feldspar", "mica"]
+    },
+    {
+      "name": "basalt",
+      "type": "Igneous",
+      "color": "Dark gray to black",
+      "grain_size": "Fine",
+      "minerals": ["pyroxene", "plagioclase", "olivine"]
+    },
+    {
+      "name": "obsidian",
+      "type": "Igneous",
+      "color": "Black",
+      "grain_size": "Glassy",
+      "minerals": ["silica"]
+    },
+    {
+      "name": "andesite",
+      "type": "Igneous",
+      "color": "Gray",
+      "grain_size": "Fine to intermediate",
+      "minerals": ["plagioclase", "hornblende"]
+    },
+    {
+      "name": "rhyolite",
+      "type": "Igneous",
+      "color": "Light pink to gray",
+      "grain_size": "Fine",
+      "minerals": ["quartz", "feldspar", "mica"]
+    },
+    {
+      "name": "diorite",
+      "type": "Igneous",
+      "color": "Salt and pepper",
+      "grain_size": "Coarse",
+      "minerals": ["plagioclase", "hornblende"]
+    },
+    {
+      "name": "gabbro",
+      "type": "Igneous",
+      "color": "Dark gray",
+      "grain_size": "Coarse",
+      "minerals": ["pyroxene", "plagioclase", "olivine"]
+    },
+    {
+      "name": "sandstone",
+      "type": "Sedimentary",
+      "color": "Tan",
+      "grain_size": "Medium",
+      "minerals": ["quartz", "feldspar"]
+    },
+    {
+      "name": "limestone",
+      "type": "Sedimentary",
+      "color": "White to gray",
+      "grain_size": "Fine",
+      "minerals": ["calcite"]
+    },
+    {
+      "name": "shale",
+      "type": "Sedimentary",
+      "color": "Gray",
+      "grain_size": "Very fine",
+      "minerals": ["clay minerals", "quartz"]
+    },
+    {
+      "name": "coal",
+      "type": "Sedimentary",
+      "color": "Black",
+      "grain_size": "Fine",
+      "minerals": ["carbon"]
+    },
+    {
+      "name": "conglomerate",
+      "type": "Sedimentary",
+      "color": "Varied",
+      "grain_size": "Coarse (rounded)",
+      "minerals": ["quartz", "rock fragments"]
+    },
+    {
+      "name": "breccia",
+      "type": "Sedimentary",
+      "color": "Varied",
+      "grain_size": "Coarse (angular)",
+      "minerals": ["quartz", "feldspar", "rock fragments"]
+    },
+    {
+      "name": "chalk",
+      "type": "Sedimentary",
+      "color": "White",
+      "grain_size": "Very fine",
+      "minerals": ["calcite"]
+    },
+    {
+      "name": "chert",
+      "type": "Sedimentary",
+      "color": "White to red to black",
+      "grain_size": "Cryptocrystalline",
+      "minerals": ["quartz"]
+    },
+    {
+      "name": "marble",
+      "type": "Metamorphic",
+      "color": "White",
+      "grain_size": "Medium",
+      "minerals": ["calcite"]
+    },
+    {
+      "name": "slate",
+      "type": "Metamorphic",
+      "color": "Gray to black",
+      "grain_size": "Fine",
+      "minerals": ["clay minerals", "mica"]
+    },
+    {
+      "name": "gneiss",
+      "type": "Metamorphic",
+      "color": "Banded black and white",
+      "grain_size": "Coarse",
+      "minerals": ["quartz", "feldspar", "mica"]
+    },
+    {
+      "name": "schist",
+      "type": "Metamorphic",
+      "color": "Silvery",
+      "grain_size": "Medium to coarse",
+      "minerals": ["mica", "chlorite", "quartz"]
+    },
+    {
+      "name": "phyllite",
+      "type": "Metamorphic",
+      "color": "Shiny gray",
+      "grain_size": "Fine",
+      "minerals": ["mica", "chlorite"]
+    },
+    {
+      "name": "quartzite",
+      "type": "Metamorphic",
+      "color": "White to gray",
+      "grain_size": "Medium",
+      "minerals": ["quartz"]
+    },
+    {
+      "name": "amphibolite",
+      "type": "Metamorphic",
+      "color": "Dark green to black",
+      "grain_size": "Medium to coarse",
+      "minerals": ["hornblende", "plagioclase"]
+    },
+    {
+      "name": "hornfels",
+      "type": "Metamorphic",
+      "color": "Dark brown to black",
+      "grain_size": "Very fine",
+      "minerals": ["mica", "feldspar"]
+    }
+  ]
+  
